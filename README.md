@@ -1,7 +1,7 @@
 Role Name
 =========
 
-A brief description of the role goes here.
+Installation of [VirtualBox](https://www.virtualbox.org/) hypervisor.
 
 Requirements
 ------------
@@ -30,9 +30,9 @@ Including an example of how to use your role (for instance, with variables passe
 License
 -------
 
-BSD
+This project is licensed under the [Apache License Version 2.0, January 2004](http://www.apache.org/licenses/).
 
 Author Information
 ------------------
 
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+[Author's website](http://jvmguy.com/).
