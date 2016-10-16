@@ -1,4 +1,3 @@
 ---
-# defaults file for virtualbox
 virtualbox_version: 5.1
-virtualbox_repository: http://download.virtualbox.org/virtualbox/rpm/fedora/virtualbox.repo 
+virtualbox_rpm_repository: http://download.virtualbox.org/virtualbox/rpm/fedora/virtualbox.repo 

@@ -3,7 +3,7 @@
 
 - name: Add VirtualBox Repository
   become: yes
-  command: "/usr/bin/dnf config-manager --add-repo {{virtualbox_repository}} update"
+  command: "/usr/bin/dnf config-manager --add-repo {{virtualbox_rpm_repository}} update"
   when: ansible_distribution == 'Fedora'
 
 - name: Update DNF
@@ -37,4 +37,8 @@
 - name: Rebuild Kernel Modules
   become: yes
   command: "/usr/lib/virtualbox/vboxdrv.sh setup"
+
+- name: Add User to VirtualBox group
+  become: yes
+  user: name={{ansible_env.SUDO_USER}} groups=vboxusers append=yes state=present
 
