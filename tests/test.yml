@@ -1,4 +1,4 @@
 ---
-- hosts: localhost
+- hosts: remote
   roles:
   - role: ../../ansible-role-virtualbox
