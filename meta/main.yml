@@ -1,6 +1,6 @@
 galaxy_info:
   author: Ronald D. Kurr
-  description: Long time slinger of code.
+  description: Oracle's VirtulBox hypervisor.
   company: jvmguy.com
 
   license: Apache 2
@@ -34,6 +34,7 @@ galaxy_info:
       - development
       - virtualization
       - virtual-box
+      - oracle 
 
 dependencies:
     - { role: kurron.base }
