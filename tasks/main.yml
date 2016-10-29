@@ -65,6 +65,7 @@
 - name: Rebuild Kernel Modules
   become: yes
   command: "/usr/lib/virtualbox/vboxdrv.sh setup"
+  when: ansible_distribution != 'CentOS'
 
 - name: Save Non-Root User
   become: no
@@ -74,4 +75,5 @@
 - name: Add User to VirtualBox group
   become: yes
   user: name={{standard_user}} groups=vboxusers append=yes state=present
+  when: ansible_distribution != 'CentOS'
 
