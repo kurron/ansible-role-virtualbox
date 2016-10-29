@@ -3,7 +3,7 @@
 
 - name: Add VirtualBox Repository
   become: yes
-  command: "/usr/bin/dnf config-manager --add-repo {{virtualbox_rpm_repository}} update"
+  command: "/usr/bin/dnf --assumeyes config-manager --add-repo {{virtualbox_rpm_repository}} update"
   when: ansible_distribution == 'Fedora'
 
 - name: Add VirtualBox Repository Key
@@ -22,7 +22,7 @@
 
 - name: Update DNF
   become: yes
-  command: "/usr/bin/dnf update"
+  command: "/usr/bin/dnf --assumeyes update"
   when: ansible_distribution == 'Fedora'
 
 - name: Update apt
