@@ -87,3 +87,5 @@
 - name: Install VirtualBox Extensions
   become: yes
   command: "VBoxManage extpack install /tmp/Oracle_VM_VirtualBox_Extension_Pack-{{virtualbox_extension_version}}-{{virtualbox_extension_build}}.vbox-extpack"
+  # I don't know how to detect if this has already been installed or not yet so ignore any failures for now
+  ignore_errors: yes
