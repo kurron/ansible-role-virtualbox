@@ -1,5 +1,5 @@
 ---
 virtualbox_version: 5.1
-virtualbox_extension_version: 5.1.8
-virtualbox_extension_build: 111374
+virtualbox_extension_version: 5.1.10
+virtualbox_extension_build: 112026
 virtualbox_rpm_repository: http://download.virtualbox.org/virtualbox/rpm/fedora/virtualbox.repo
