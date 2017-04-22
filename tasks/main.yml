@@ -16,7 +16,7 @@
 - name: Add VirtualBox Repository
   become: yes
   apt_repository:
-      repo: "deb http://download.virtualbox.org/virtualbox/debian xenial contrib"
+      repo: "deb http://download.virtualbox.org/virtualbox/debian {{ansible_distribution_release}} contrib"
       state: present
   when: ansible_distribution == 'Ubuntu'
 
